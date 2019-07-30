@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".CounterActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:hint="@string/Counter_input"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textColor="@color/Mild"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/set_counter"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="9dp"
+        android:background="#4589"
+        android:text="@string/SetCounter" />
+    <TextView
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@color/Mild"
+        android:text="@string/Counter_Result"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_marginTop="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+
+            android:id="@+id/btn_plus"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/plus"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/minus"
+
+            android:textSize="50sp" />
+    </RelativeLayout>
+</LinearLayout>
