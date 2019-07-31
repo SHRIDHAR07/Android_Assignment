@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Login</string>
+    <!-- Sign in window -->
+    <string name="Welcome">Welcome Back!</string>
+    <string name="Please_login">Please Login to Set Started </string>
+    <string name="Enter_contact">Contact Number</string>
+    <string name="Enter_password">Password</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="Remember">Remember Password</string>
+    <string name="Dont_hv_acc">Don\'t have an account ?</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="Personal">Personal info</string>
+    <string name="Name">Name</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Age">Age</string>
+    <string name="Registration">Registration</string>
+    <string name="Address">Address</string>
+    <string name="State">State</string>
+    <string name="District">District</string>
+    <string name="Grampanchayat">Grampanchayat</string>
+    <string name="village">Village</string>
+    <string name="Adhar">Aadhar Number</string>
+    <string name="IMEI1">IMEI1</string>
+    <string name="IMEI2">IMEI2</string>
+    <string name="Sign_up">Sign Up</string>
+</resources>

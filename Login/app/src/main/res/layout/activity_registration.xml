@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Personal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"/>
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Name"
+        android:textSize="@dimen/text_size"/>
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Gender"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"/>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Male"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/Male"
+            android:layout_marginEnd="-110dp"
+            android:text="@string/Female" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Age"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Enter_contact"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Enter_password"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Address"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/State"
+    android:textSize="@dimen/text_size"/>
+
+    <Spinner
+        android:layout_marginTop="6dp"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/District"
+        android:textSize="@dimen/text_size"/>
+    <Spinner
+        android:layout_marginTop="6dp"
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Grampanchayat"
+        android:textSize="@dimen/text_size"/>
+    <Spinner
+        android:layout_marginTop="6dp"
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/village"
+        android:textSize="@dimen/text_size"/>
+    <Spinner
+        android:layout_marginTop="6dp"
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Adhar"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/IMEI1"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"
+        />
+
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="36146548452487"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/IMEI2"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"
+        />
+
+    <EditText
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="865482145881"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_sign_in"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sign_up"
+        android:gravity="center"
+        android:text="@string/Sign_up"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
+    
+</ScrollView>

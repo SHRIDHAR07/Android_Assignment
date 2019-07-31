@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shades"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/Welcome"
+            android:textStyle="normal"
+            android:textColor="@color/Black"
+            android:fontFamily="sans-serif-light"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Please_login"
+            android:textColor="@color/Black"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/Contact_Sign_in"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="20dp"
+            android:hint="@string/Enter_contact"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Password_sign_in"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawableRight="@drawable/invisible"
+            android:drawablePadding="20dp"
+            android:hint="@string/Enter_password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sign_up"
+            android:gravity="center"
+            android:text="@string/Sign_in"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="6dp"
+                android:gravity="clip_horizontal"
+                android:text="@string/Remember"
+                android:textColor="@color/Black" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/btn_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/Dont_hv_acc"
+            android:textColor="@color/Green"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/login_bacground">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
