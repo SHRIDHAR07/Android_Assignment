@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FragmentLogin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shades"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/header_top"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/Welcome"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/Please_login"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/header2_text_size" />
+
+            <EditText
+                android:id="@+id/Contact_Sign_in"
+                android:layout_width="@dimen/cred_width_contact"
+                android:layout_height="@dimen/cred_height"
+                android:layout_marginTop="@dimen/cred_top_margin_contact"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="@dimen/icon_padding"
+                android:hint="@string/Enter_contact"
+                android:inputType="number"
+                android:textSize="@dimen/in_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Password_sign_in"
+                    android:layout_width="@dimen/cred_weight"
+                    android:layout_height="@dimen/cred_height"
+                    android:layout_marginLeft="@dimen/cred_margin_left"
+                    android:layout_marginTop="@dimen/cred_top_margin_pass"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="@dimen/icon_padding"
+                    android:hint="@string/Enter_password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/in_text_size" />
+
+                <ImageButton
+                    android:id="@+id/btn_showPass"
+                    android:layout_width="@dimen/cred_btn_eye"
+                    android:layout_height="@dimen/cred_btn_eye"
+                    android:layout_marginTop="@dimen/cred_btn_margin_top"
+                    android:src="@drawable/invisible" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="@dimen/sing_up_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_up_btn_top_margin"
+                android:background="@drawable/sign_up"
+                android:gravity="center"
+                android:text="@string/Sign_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/in_text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_up_btn_top_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/rem_pass_left_margin"
+                    android:layout_marginTop="@dimen/rem_pass_top_margin"
+                    android:gravity="clip_horizontal"
+                    android:text="@string/Remember"
+                    android:textColor="@color/Black" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_Remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dnt_acc_top_margin"
+                android:background="@android:color/transparent"
+                android:text="@string/Dont_hv_acc"
+                android:textColor="@color/Green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/login_bacground">
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

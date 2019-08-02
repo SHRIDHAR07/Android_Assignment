@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.FragmentRegistration">
+<Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:title="@string/Registration"
+    android:background="@color/Green">
+
+</Toolbar>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shades">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Personal"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/Black"/>
+            <EditText
+                android:id="@+id/Name"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Name"
+                android:textSize="@dimen/in_text_size"/>
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Gender"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/Black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Male"/>
+
+                <RadioButton
+                    android:layout_toRightOf="@id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Female" />
+                </RelativeLayout>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Age"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+            <EditText
+                android:id="@+id/Contact"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Enter_contact"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+            <EditText
+                android:id="@+id/Password"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Enter_password"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/conPassword"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ConfirmPassword"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Address"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Country"
+                android:textSize="@dimen/in_text_size"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height" />
+
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/State"
+                android:textSize="@dimen/in_text_size"/>
+
+            <Spinner
+
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height" />
+
+
+
+            <EditText
+                android:id="@+id/Adhar"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Adhar"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IMEI1"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"
+                />
+
+            <EditText
+                android:id="@+id/IMEI"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="36146548452487"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/Black"/>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_sign_in"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_margin"
+                android:background="@drawable/sign_up"
+                android:gravity="center"
+                android:text="@string/Sign_up"
+                android:textSize="@dimen/in_text_size"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
+    </LinearLayout>
