@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/shades">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contacts" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cred_btn_eye"
+        android:layout_toRightOf="@+id/item_image"
+        android:gravity="center"
+        android:text="@string/Name" />
+
+    <TextView
+        android:id="@+id/card_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/item_image"
+        android:gravity="center"
+        android:text="@string/Enter_contact" />
+    <EditText
+        android:layout_marginLeft="@dimen/cred_btn_margin_top"
+        android:id="@+id/item_country"
+        android:layout_toRightOf="@id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Country"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/item_country"
+        android:background="@android:color/transparent"/>
+
+
+</RelativeLayout>

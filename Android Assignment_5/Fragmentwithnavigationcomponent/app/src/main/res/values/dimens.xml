@@ -1,0 +1,32 @@
+<resources>
+    <!--Registration window default dimen -->
+    <dimen name="reg_margin">25dp</dimen>
+    <dimen name="text_margin">20dp</dimen>
+    <dimen name="in_text_size">20sp</dimen>
+    <dimen name="spinner_height">40dp</dimen>
+    <!-- Header Title  dimen i.e Welcome back!-->
+    <dimen name="header_top">70dp</dimen>
+    <dimen name="header_text_size">25sp</dimen>
+    <dimen name="header2_text_size">15sp</dimen>
+    <!-- FragmentLogin credentials dimen -->
+    <dimen name="cred_width_contact">299dp</dimen>
+    <dimen name="cred_weight">310dp</dimen>
+    <dimen name="cred_height">60dp</dimen>
+    <dimen name="cred_top_margin_contact">70dp</dimen>
+    <dimen name="cred_top_margin_pass">15dp</dimen>
+    <dimen name="icon_padding">20dp</dimen>
+    <dimen name="cred_margin_left">25dp</dimen>
+    <dimen name="cred_btn_eye">25dp</dimen>
+    <dimen name="cred_btn_margin_top">34dp</dimen>
+    <!-- Sign up button -->
+    <dimen name="sing_up_btn_width">145dp</dimen>
+    <dimen name="sign_up_btn_top_margin">20dp</dimen>
+    <!--Remember password dimen  -->
+    <dimen name="rem_pass_top_margin">6dp</dimen>
+    <dimen name="rem_pass_left_margin">35dp</dimen>
+    <!-- Dnt have account dimen -->
+    <dimen name="dnt_acc_top_margin">55dp</dimen>
+
+
+
+</resources>
