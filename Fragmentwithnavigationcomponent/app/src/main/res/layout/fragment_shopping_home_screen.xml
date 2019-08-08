@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.FragmentShoppingHomeScreen">
+    tools:context=".UI.Fragments.ProductListFragment">
 
 
 
@@ -33,5 +33,7 @@
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+
 
 </FrameLayout>

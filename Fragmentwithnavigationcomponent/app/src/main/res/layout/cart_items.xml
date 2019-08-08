@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/cart_item_image"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="150dp"
         android:clickable="true"
         android:src="@drawable/orange" />
 
@@ -19,18 +19,22 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/Name"
-        android:layout_marginTop="155dp"
+        android:layout_marginTop="145dp"
         android:textColor="@color/Black" />
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp">
     <TextView
         android:id="@+id/cart_item_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Price"
         android:gravity="center"
-        android:layout_marginTop="175dp"
+
 
         android:textColor="@android:color/darker_gray" />
 
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -6,7 +6,7 @@
     app:startDestination="@id/fragment_Login2">
     <fragment
         android:id="@+id/fragmentShoppingHomeScreen"
-        android:name="com.example.fragmentwithnavigationcomponent.UI.FragmentShoppingHomeScreen"
+        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragments.ProductListFragment"
         android:label="fragment_shopping_home_screen"
         tools:layout="@layout/fragment_shopping_home_screen" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Login2"
-        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragment_Login"
+        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -27,12 +27,19 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Cart"
-        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragment_Cart"
+        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragments.ShoppingCartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart"/>
+        tools:layout="@layout/fragment_cart">
+
+        <argument
+            android:name="product"
+            app:argType="com.example.fragmentwithnavigationcomponent.Model.Product"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_Registration2"
-        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragment_Registration"
+        android:name="com.example.fragmentwithnavigationcomponent.UI.Fragments.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" />
 </navigation>

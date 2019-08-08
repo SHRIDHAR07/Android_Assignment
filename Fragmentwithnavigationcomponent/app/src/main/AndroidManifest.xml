@@ -14,9 +14,9 @@
         <!--<activity android:name=".UI.ActivityShoppingCart">
 
         </activity>-->
-        <activity android:name=".UI.Authentication" />
+        <activity android:name=".UI.Activities.Authentication" />
        <!-- <activity android:name=".UI.MainActivity">-->
-        <activity android:name=".UI.ActivityShoppingCart">
+        <activity android:name=".UI.Activities.ActivityShoppingCart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

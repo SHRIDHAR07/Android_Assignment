@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UI.MainActivity"
+    tools:context=".UI.Activities.MainActivity"
     android:gravity="center_horizontal"
     android:background="@drawable/shades"
     android:weightSum="1">
