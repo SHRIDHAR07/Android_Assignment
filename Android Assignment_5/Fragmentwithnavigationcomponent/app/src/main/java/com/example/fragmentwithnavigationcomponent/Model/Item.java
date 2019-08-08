@@ -4,7 +4,7 @@ public class Item {
     private String name;
     private String subTitle;
     private int image;
-    private String country;
+    private String per_info;
 
     public String getName() {
         return name;
@@ -30,12 +30,13 @@ public class Item {
         this.image = image;
     }
 
-    public String getCountry() {
-        return country;
+
+    public String getPer_info() {
+        return per_info;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setPer_info(String per_info) {
+        this.per_info = per_info;
     }
 }
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FragmentShoppingHomeScreen">
+
+
+
+    <Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/RoyayGreen"
+        android:title="@string/shopping_title"
+        android:gravity="center">
+        <ImageButton
+
+            android:id="@+id/cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cart"
+            android:layout_marginLeft="150dp"
+            android:background="@android:color/transparent"/>
+
+    </Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="56dp"
+        android:id="@+id/Recycle_view_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

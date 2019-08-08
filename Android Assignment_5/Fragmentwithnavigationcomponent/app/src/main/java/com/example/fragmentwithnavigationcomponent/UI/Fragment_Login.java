@@ -22,6 +22,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.fragmentwithnavigationcomponent.R;
+import com.example.fragmentwithnavigationcomponent.Util.AlertBox;
+
 public class Fragment_Login extends Fragment implements View.OnClickListener {
     private EditText mUserName;
     private EditText mPassword;
@@ -110,20 +112,18 @@ public class Fragment_Login extends Fragment implements View.OnClickListener {
             }
 
             else
-                Toast.makeText(getActivity(), R.string.valid, Toast.LENGTH_SHORT).show();
+                new AlertBox().showAlert(getActivity(),"Invalid Username and Password ");
         }
     }
 
     private boolean isValid() {
         if (TextUtils.isEmpty(mUserName.getText().toString())) {
-            mUserName.requestFocus();
-            mUserName.setError("Please Enter username ");
+            new AlertBox().showAlert(getActivity(),"Please Enter Username");
             return false;
         }
 
         if (TextUtils.isEmpty(mPassword.getText().toString())) {
-            mPassword.requestFocus();
-            mPassword.setError("please enter password ");
+            new AlertBox().showAlert(getActivity(),"Please Enter The  Password");
             return false;
         }
 
